@@ -1,0 +1,52 @@
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.25rem;
+}
+
+.navBar {
+  background: white;
+  box-shadow: 4px 2px 5px #03045E;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  background: white;
+}
+
+.navBar button {
+  background: white;
+  border: 2px solid #0077B6;
+  color: #0077B6;
+  padding: 0.4rem 0.5rem;
+  border-radius: 10px;
+}
+
+.navBar button:hover {
+  background: white;
+  color: #89D1E6;
+  cursor: pointer;
+}
+
+.brand {
+  cursor: pointer;
+  font-size: 2rem;
+  /* color: rgb(95, 186, 214); */
+}
+
+.name {
+  /* color: #334A51;
+   */
+   color: #0077B6;
+}
+
+.signbuttons {
+  display: flex;
+}
+
+li {
+  margin-right: 3px;
+}

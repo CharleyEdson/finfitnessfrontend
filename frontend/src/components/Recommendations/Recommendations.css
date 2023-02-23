@@ -1,0 +1,39 @@
+.header {
+    color: #0077B6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 100rem) {
+
+    .recommendationscontainer {
+        width: 80vh;
+  
+
+
+    }
+    }
+
+.income {
+    font-style: italic;
+    font-weight: bold;
+    color: #00B4D8;
+}
+
+.recs {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12.36px;
+    color: #023E8A;
+}
+
+.recsfont {
+    font-size: 20px;
+    
+}
+
+.value {
+    display: contents;
+    color: #00B4D8;
+
+}

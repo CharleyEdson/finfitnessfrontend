@@ -1,0 +1,35 @@
+.background {
+    /* background-color: rgb(137, 209, 230); */
+    color: rgb(48, 130, 167);
+    height: 60rem;
+}
+
+.registerbutton {
+    
+    background-color: white;
+    color: #023E8A;
+    border-color: #0077B6;
+
+}
+
+.titles {
+    color: #023E8A;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid #023E8A;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.buttonstyle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

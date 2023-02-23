@@ -1,0 +1,11 @@
+@media (max-width: 100rem) {
+
+    .networthcontainer {
+        width: 80vh;
+    }
+    }
+
+    .nameheaders {
+        display: flex;
+        justify-content: center;
+    }

@@ -1,0 +1,23 @@
+.background {
+    /* background-color: rgb(137, 209, 230); */
+    color: rgb(48, 130, 167);
+    height: 250rem;
+}
+
+.welcome {
+    color: #334A51;
+    font-style: italic;
+}
+
+
+.graphcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.click {
+    color: #48CAE4;
+}

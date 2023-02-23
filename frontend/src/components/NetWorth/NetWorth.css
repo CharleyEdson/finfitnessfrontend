@@ -1,0 +1,25 @@
+@media (max-width: 100rem) {
+
+.networthcontainer {
+    width: 80vh;
+    
+}
+}
+
+.nameheaders {
+    display: flex;
+    justify-content: center;
+}
+
+
+.up {
+    color: #4FBF84
+}
+
+.down {
+    color: rgb(180, 36, 36)
+}
+
+.border {
+    border-radius: 10px;
+}

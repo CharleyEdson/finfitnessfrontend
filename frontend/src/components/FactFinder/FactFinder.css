@@ -1,0 +1,32 @@
+.riskexplanation {
+    font-size: xx-small;
+}
+
+.factscontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.inputboxes {
+    border-radius: 10px;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #0096C7;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #0096C7;
+}

@@ -1,0 +1,13 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.assetsubmit {
+    color: #0096C7;
+    border-color: #0077B6;
+    display: flex;
+    justify-content: center;
+}
