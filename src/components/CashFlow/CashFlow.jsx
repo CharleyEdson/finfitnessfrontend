@@ -32,16 +32,7 @@ const CashFlow = ({ cashFlow }) => {
 
   let data = [["Month", "Net Cash Flow", { role: "style" }]];
   data = data.concat(
-    cashFlow
-      .map((el) =>
-        Object.values(el)
-          .slice(2, 4)
-          .concat(
-            "color: #334A51; opacity: 1; stroke-color: #96AFB8; stroke-width: 1;"
-          )
-      )
-      .reverse()
-  );
+    cashFlow.map((el) => Object.values(el).slice(2, 4).concat("color: #334A51; opacity: 1; stroke-color: #96AFB8; stroke-width: 1;")).reverse());
 
   return (
     <div>
