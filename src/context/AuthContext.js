@@ -20,7 +20,7 @@ function setUserObject(user) {
 
 export const AuthProvider = ({ children }) => {
   const BASE_URL =
-    "https://cors-anywhere.herokuapp.com//http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/auth";
+    "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/auth";
   const userToken = JSON.parse(localStorage.getItem("token"));
   const decodedUser = userToken ? jwtDecode(userToken) : null;
   const [token, setToken] = useState(userToken);
