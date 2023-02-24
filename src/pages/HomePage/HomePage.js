@@ -40,11 +40,14 @@ const HomePage = (props) => {
   const fetchUserInfo = async () => {
     try {
       let response = await axios
-        .get(`http://127.0.0.1:8000/api/userinfo/`, {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        })
+        .get(
+          `https://cors-anywhere.herokuapp.com//http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/userinfo/`,
+          {
+            headers: {
+              Authorization: "Bearer " + token,
+            },
+          }
+        )
         .then((response) => {
           setUserInfo(response["data"][0]);
         });
@@ -67,11 +70,14 @@ const HomePage = (props) => {
   const fetchCashFlow = async () => {
     try {
       let response = await axios
-        .get("http://127.0.0.1:8000/api/cashflow/historicalnetcashflow/", {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        })
+        .get(
+          "https://cors-anywhere.herokuapp.com//http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/cashflow/historicalnetcashflow/",
+          {
+            headers: {
+              Authorization: "Bearer " + token,
+            },
+          }
+        )
         .then((response) => {
           setCashFlow(response["data"]);
         });
@@ -84,7 +90,7 @@ const HomePage = (props) => {
   const fetchNetWorth = async () => {
     try {
       let response = await axios.get(
-        `http://127.0.0.1:8000/api/networth/historicalnetworth/`,
+        `https://cors-anywhere.herokuapp.com//http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/networth/historicalnetworth/`,
         {
           headers: {
             Authorization: "Bearer " + token,
@@ -105,11 +111,14 @@ const HomePage = (props) => {
 
   async function fetchIncome() {
     try {
-      let response = await axios.get("http://127.0.0.1:8000/api/income/", {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      });
+      let response = await axios.get(
+        "https://cors-anywhere.herokuapp.com//http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/income/",
+        {
+          headers: {
+            Authorization: "Bearer " + token,
+          },
+        }
+      );
       setIncome(response["data"][0]);
     } catch (error) {
       console.log(error.response);
