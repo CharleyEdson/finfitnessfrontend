@@ -51,6 +51,7 @@ const HomePage = (props) => {
         .then((response) => {
           setUserInfo(response["data"][0]);
           console.log('Try worked.')
+          console.log(response["data"][0]);
         });
     } catch (error) {
       console.log(error.response);
