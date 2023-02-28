@@ -105,7 +105,7 @@ const HomePage = (props) => {
       } catch (error) {}
     } catch (error) {
       console.log(error.response);
-      <div></div>;
+      setNetWorth({date: "2023-02-24", id: 20, netWorth: 510000, user_id: 9});
     }
   };
 
