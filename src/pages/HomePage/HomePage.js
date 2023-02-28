@@ -83,7 +83,7 @@ const HomePage = (props) => {
         });
     } catch (error) {
       console.log(error.response);
-      <div></div>;
+      setCashFlow({date: "2023-02-24", id: 11, month: "1", net_cash_flow: 30000, user_id:9,year:"2023"});
     }
   };
 
