@@ -50,6 +50,7 @@ const HomePage = (props) => {
         )
         .then((response) => {
           setUserInfo(response["data"][0]);
+          console.log('Try worked.')
         });
     } catch (error) {
       console.log(error.response);
@@ -64,6 +65,7 @@ const HomePage = (props) => {
         verified_facts: false,
       });
       console.log(userInfo);
+      console.log('try did not work.')
     }
   };
 
