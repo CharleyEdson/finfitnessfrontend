@@ -18,7 +18,7 @@ const InputIncExp = ({ currentDate }) => {
 
   async function postIncExp(currents) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/currentincexp/createcurrents/",
+      "https://cors-anywhere.herokuapp.com/api/currentincexp/createcurrents/",
       currents,
       {
         headers: {
@@ -33,7 +33,7 @@ const InputIncExp = ({ currentDate }) => {
 
   async function calculateCashFlow() {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/currentincexp/",
+      "https://cors-anywhere.herokuapp.com/api/currentincexp/",
       {
         headers: {
           Authorization: "Bearer " + token,

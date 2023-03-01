@@ -14,7 +14,7 @@ const InputAssets = (props) => {
 
   async function addUserAssets(userAssets) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/assets/",
+      "https://cors-anywhere.herokuapp.com/api/assets/",
       userAssets,
       {
         headers: {
@@ -29,7 +29,7 @@ const InputAssets = (props) => {
 
   async function updateNetWorth() {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/networth/onceaday/",
+      "https://cors-anywhere.herokuapp.com/api/networth/onceaday/",
       {
         headers: {
           Authorization: "Bearer " + token,

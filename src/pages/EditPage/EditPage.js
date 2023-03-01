@@ -28,7 +28,7 @@ const EditPage = (props) => {
 
   async function fetchUserInfo() {
     try {
-      let response = await axios.get("http://127.0.0.1:8000/api/userinfo/", {
+      let response = await axios.get("https://cors-anywhere.herokuapp.com/api/userinfo/", {
         headers: {
           Authorization: "Bearer " + token,
         },

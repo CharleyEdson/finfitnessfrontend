@@ -104,7 +104,7 @@ const MonthlyInfo = (props) => {
   const fetchUserExpenses = async () => {
     try {
       let response = await axios.get(
-        `http://127.0.0.1:8000/api/currentincexp/historicalcurrents/`,
+        `https://cors-anywhere.herokuapp.com/api/currentincexp/historicalcurrents/`,
         {
           headers: {
             Authorization: "Bearer " + token,

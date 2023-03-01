@@ -21,7 +21,7 @@ const FactFinder = (props) => {
 
   async function addUserInfo(newUserInfo) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/userinfo/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/userinfo/",
       newUserInfo,
       {
         headers: {
@@ -36,7 +36,7 @@ const FactFinder = (props) => {
 
   async function addUserAssets(userAssets) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/assets/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/assets/",
       userAssets,
       {
         headers: {
@@ -51,7 +51,7 @@ const FactFinder = (props) => {
 
   async function updateNetWorth() {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/networth/onceaday/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/networth/onceaday/",
       {
         headers: {
           Authorization: "Bearer " + token,
@@ -61,7 +61,7 @@ const FactFinder = (props) => {
   }
   async function adduserBudget(userBudget) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/budget/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/budget/",
       userBudget,
       {
         headers: {

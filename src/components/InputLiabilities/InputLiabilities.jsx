@@ -13,7 +13,7 @@ const InputLiabilities = () => {
 
   async function addUserLiabilities(userLiabilities) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/liabilities/",
+      "https://cors-anywhere.herokuapp.com/api/liabilities/",
       userLiabilities,
       {
         headers: {
@@ -27,7 +27,7 @@ const InputLiabilities = () => {
   }
   async function updateNetWorth() {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/networth/onceaday/",
+      "https://cors-anywhere.herokuapp.com/api/networth/onceaday/",
       {
         headers: {
           Authorization: "Bearer " + token,

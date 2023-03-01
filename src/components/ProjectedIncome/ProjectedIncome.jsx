@@ -14,7 +14,7 @@ const ProjectedIncome = (props) => {
 
   async function addUserIncome(userIncome) {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/income/",
+      "https://cors-anywhere.herokuapp.com/api/income/",
       userIncome,
       {
         headers: {
