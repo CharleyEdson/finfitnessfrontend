@@ -14,7 +14,7 @@ const InputAssets = (props) => {
 
   async function addUserAssets(userAssets) {
     const response = await axios.post(
-      "https://cors-anywhere.herokuapp.com/api/assets/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/assets/",
       userAssets,
       {
         headers: {
@@ -29,7 +29,7 @@ const InputAssets = (props) => {
 
   async function updateNetWorth() {
     const response = await axios.get(
-      "https://cors-anywhere.herokuapp.com/api/networth/onceaday/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/networth/onceaday/",
       {
         headers: {
           Authorization: "Bearer " + token,

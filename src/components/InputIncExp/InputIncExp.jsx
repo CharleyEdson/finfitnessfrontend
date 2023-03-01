@@ -18,7 +18,7 @@ const InputIncExp = ({ currentDate }) => {
 
   async function postIncExp(currents) {
     const response = await axios.post(
-      "https://cors-anywhere.herokuapp.com/api/currentincexp/createcurrents/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/currentincexp/createcurrents/",
       currents,
       {
         headers: {

@@ -14,7 +14,7 @@ const UpdateBudgetModal = ({ open, onClose, user, token }) => {
 
   async function fetchIncome() {
     try {
-      let response = await axios.get("http://127.0.0.1:8000/api/income/", {
+      let response = await axios.get("https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/income/", {
         headers: {
           Authorization: "Bearer " + token,
         },

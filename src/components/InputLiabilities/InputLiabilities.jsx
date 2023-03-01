@@ -13,7 +13,7 @@ const InputLiabilities = () => {
 
   async function addUserLiabilities(userLiabilities) {
     const response = await axios.post(
-      "https://cors-anywhere.herokuapp.com/api/liabilities/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/liabilities/",
       userLiabilities,
       {
         headers: {
@@ -27,7 +27,7 @@ const InputLiabilities = () => {
   }
   async function updateNetWorth() {
     const response = await axios.get(
-      "https://cors-anywhere.herokuapp.com/api/networth/onceaday/",
+      "https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/networth/onceaday/",
       {
         headers: {
           Authorization: "Bearer " + token,

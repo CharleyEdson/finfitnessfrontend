@@ -62,7 +62,7 @@ const Budget = (props) => {
 
   const fetchUserBudget = async () => {
     try {
-      let response = await axios.get(`http://127.0.0.1:8000/api/budget/`, {
+      let response = await axios.get(`https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/budget/`, {
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -83,7 +83,7 @@ const Budget = (props) => {
   const fetchUserExpenses = async () => {
     try {
       let response = await axios.get(
-        `http://127.0.0.1:8000/api/currentincexp/historicalcurrents/`,
+        `https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/currentincexp/historicalcurrents/`,
         {
           headers: {
             Authorization: "Bearer " + token,

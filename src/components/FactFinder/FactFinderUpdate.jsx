@@ -19,7 +19,7 @@ const FactFinderUpdate = ({ userInfo }) => {
 
   async function updateUserInfo(info) {
     const response = await axios.put(
-      `http://127.0.0.1:8000/api/userinfo/${userInfo.id}/`,
+      `https://cors-anywhere.herokuapp.com/http://finfitnessbackend-env.eba-55w3f9b3.us-west-1.elasticbeanstalk.com/api/userinfo/${userInfo.id}/`,
       info,
       {
         headers: {
